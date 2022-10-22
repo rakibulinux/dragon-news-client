@@ -35,7 +35,7 @@ const RightSideNav = () => {
       {user?.uid ? (
         ""
       ) : (
-        <>
+        <div className="d-flex justify-content-center">
           <ButtonGroup vertical>
             <Button
               onClick={handleGoogleSignIn}
@@ -50,7 +50,7 @@ const RightSideNav = () => {
               Login with GitHub
             </Button>
           </ButtonGroup>
-        </>
+        </div>
       )}
 
       <div className="my-4">

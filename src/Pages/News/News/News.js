@@ -4,18 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 
 const News = () => {
   const news = useLoaderData();
-  const {
-    title,
-    _id,
-    category_id,
-    others_info,
-    rating,
-    author,
-    total_view,
-    thumbnail_url,
-    image_url,
-    details,
-  } = news;
+  const { title, category_id, image_url, details } = news;
   return (
     <div>
       <h1>I am from news {news.length}</h1>

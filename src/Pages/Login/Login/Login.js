@@ -42,7 +42,7 @@ const Login = () => {
       });
   };
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form className="mb-sm-3" onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control name="email" type="email" placeholder="Enter email" />

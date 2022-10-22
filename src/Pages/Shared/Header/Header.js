@@ -81,7 +81,7 @@ const Header = () => {
                   </Link>
                 </>
               )}
-              <Link>
+              <Link to="/profile">
                 {user?.photoURL ? (
                   <Image
                     src={user?.photoURL}

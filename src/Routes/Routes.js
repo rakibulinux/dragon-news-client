@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login/Login";
 import News from "../Pages/News/News/News";
+import Profile from "../Pages/Others/Profile/Profile/Profile";
 import TermsAndCondition from "../Pages/Others/TermsAndCondition/TermsAndCondition";
 import Pricing from "../Pages/Pricing/Pricing/Pricing";
 import Register from "../Pages/Register/Register/Register";
@@ -45,6 +46,14 @@ const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <Pricing />,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
